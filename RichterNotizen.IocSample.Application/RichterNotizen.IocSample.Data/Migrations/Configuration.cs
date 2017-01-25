@@ -2,14 +2,14 @@ namespace RichterNotizen.IocSample.Data.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<RichterNotizen.IocSample.Data.DatabaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(RichterNotizen.IocSample.Data.DatabaseContext context)
+        protected override void Seed(DatabaseContext context)
         {
             context.Products.AddOrUpdate(
                 new Product
