@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
+    <Compile Include="Infrastructure\DataLayerModule.cs" />
     <Compile Include="Migrations\201701252155135_InitialMigration.cs" />
     <Compile Include="Migrations\201701252155135_InitialMigration.Designer.cs">
       <DependentUpon>201701252155135_InitialMigration.cs</DependentUpon>
