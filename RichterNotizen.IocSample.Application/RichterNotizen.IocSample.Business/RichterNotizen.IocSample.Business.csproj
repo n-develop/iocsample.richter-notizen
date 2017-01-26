@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\BusinessLayerModule.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="ProductInfo.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
