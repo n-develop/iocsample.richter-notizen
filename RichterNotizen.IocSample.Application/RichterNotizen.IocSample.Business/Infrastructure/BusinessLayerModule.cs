@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using RichterNotizen.IocSample.Data.Infrastructure;
 
 namespace RichterNotizen.IocSample.Business.Infrastructure
 {
@@ -6,6 +7,9 @@ namespace RichterNotizen.IocSample.Business.Infrastructure
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterModule<DataLayerModule>();
+            builder.RegisterType<ProductService>().As<IProductService>();
+
             base.Load(builder);
         }
     }
