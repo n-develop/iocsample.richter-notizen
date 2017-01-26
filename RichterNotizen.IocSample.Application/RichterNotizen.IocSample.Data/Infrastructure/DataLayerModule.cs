@@ -6,6 +6,9 @@ namespace RichterNotizen.IocSample.Data.Infrastructure
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<DatabaseContext>().AsSelf();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>();
+
             base.Load(builder);
         }
     }
