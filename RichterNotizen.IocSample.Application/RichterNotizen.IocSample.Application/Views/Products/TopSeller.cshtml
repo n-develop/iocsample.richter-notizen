@@ -1,0 +1,27 @@
+﻿@model System.Collections.Generic.List<RichterNotizen.IocSample.Business.ProductInfo>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Top Seller</title>
+</head>
+<body>
+<div>
+    <h1>Top Seller</h1>  
+    @foreach (var topSeller in Model)
+    {
+        <div>
+            <h2>@topSeller.Name</h2>
+            <p>
+                @topSeller.Price €
+            </p>
+        </div>
+    }
+</div>
+</body>
+</html>
