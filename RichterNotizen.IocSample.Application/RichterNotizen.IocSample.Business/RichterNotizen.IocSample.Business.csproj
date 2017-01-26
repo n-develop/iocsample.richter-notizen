@@ -53,6 +53,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RichterNotizen.IocSample.Data\RichterNotizen.IocSample.Data.csproj">
+      <Project>{1ABA11F3-7F34-45A7-ACC4-286298D6167C}</Project>
+      <Name>RichterNotizen.IocSample.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
